@@ -16,6 +16,15 @@ Through reading the sources, I have found a list of terms that may provide more 
 - cyber-physical empirical method
 - hardware-in-the-loop
 
+### Software
+- Simulink real time stuff seems to be the most common (or the predecessor)
+
+### Hardware
+
+- Speedgoat (Simulink real time?)
+- SCRAMNet (Shared Common Random Access Memory Network)(shared memory / distributed computing)
+- Compensators ? (for signals)
+
 ## Names from Dr. Howard
 - Bozidar Stojadinovic (ETH Zurich)
     - https://stojadinovic.ibk.ethz.ch/
