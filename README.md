@@ -33,7 +33,8 @@ Through reading the sources, I have found a list of terms that may provide more 
     - http://websites.umich.edu/~nuclear/labs/ecmf/
 
 
-## To Do
-- Finish reading papers from Dr. Howard's folder
-    - organize / sort papers into folders
-    - note any papers that are particularly good or relevant
+## Papers of Interest
+- The papers on compensation seem like they would be useful to look at as the set up comes together more, but I cannot really understand all of the nuance at the moment
+- The teaching paper had a lot of good insight and a great intro/background on the state of hybrid simulation at the time of writing
+- The distributed RTHS paper was very interesting for the large scale application of RTHS
+- The historical and purpose/benefits papers referring to computional only hybrid simulation provided some context and theory that was good to read.
