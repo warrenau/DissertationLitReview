@@ -38,3 +38,4 @@ Through reading the sources, I have found a list of terms that may provide more 
 - The teaching paper had a lot of good insight and a great intro/background on the state of hybrid simulation at the time of writing
 - The distributed RTHS paper was very interesting for the large scale application of RTHS
 - The historical and purpose/benefits papers referring to computional only hybrid simulation provided some context and theory that was good to read.
+- The Shake table paper is very thourough with a lot of diagrams, but also a lot of math and matrix equations.
