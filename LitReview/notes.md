@@ -42,3 +42,28 @@
 - data acquisition in LabVIEW, digital model in Flownext (1D lumped parameter fluid dynamics)
 - 
 ---
+
+
+---
+**Thermal Modeling of an eVinci-like heat pipe microreactor using OpenFOAM**
+
+*Price et. al.*
+
+- Serpent is used to determine power distribution to give to OpenFOAM
+- focus of study is on heat pipe model: 2 different models are used, a more detailed model and a simplified model
+- core design was based on eVinci, using TRISO fuel (modeled as AGR-2 UCO TRISO), 4 MWth power output, core lifetime of 4 years
+- The core layout is similar to what I have modeled so far, but has a more even distribution of cooling elements (at least one in every row)
+- Serpent model used 1200 K as temp for graphite
+- OpenFOAM model uses 1/12 symmetry
+- Exterior uses convective heat transfer coefficient of 5 W/m^2/K at 298 K
+- Thermal conductivities: 15 W/m/K for graphite, 2.98 W/m/K for UCO, 4.24 W/m/K for TRISO particle, 9.92 W/m/K for homogenized fuel compact
+- Math got a bit dry in section 2, might need to revisit at a later time
+
+
+---
+
+
+
+
+
+
