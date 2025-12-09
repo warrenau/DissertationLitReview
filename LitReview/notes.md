@@ -62,6 +62,100 @@
 
 ---
 
+---
+**Transient Analysis of a Micro-reactor using the DireWolf Code Suite**
+
+*Roskoff et. al.*
+
+- DireWolf uses Griffin (neutronics), Bison (thermal-mechanical), and Sockeye (heat pipe) for reactor modelling
+- Details of core design and codes presented in companion paper
+- eVinci inspired design
+- 2 transient events: 1) Inadvertant Control Drum Rotation (IDR) and 2) Single Control Drum Rotation (SDR)
+- IDR:
+    - simulaneous rotation (constant speed) of all control drums from critical outward
+    - maximum rotation occurs at 2 seconds, followed by rotation to shutdown
+    - drum rotation speeds: 0.5, 1, 2, 3 degrees per second
+    - safety limits for simulations: prompt critical (reactivity > $1.0), max fuel temp (>1600 deg C)
+    - starting power: ~5.5e+06
+    - max power (highest case): ~5.0e+09
+    - power increases: <4x, <4x, 40x, 840x
+    - highest rotation speed goes prompt critical and reaches max power before 2 seconds
+- SDR:
+    - sudden rotation of 1 control drum from critical to completely outward
+    - 30 seconds of total time; at 2 seconds into transient, all drums are moved to shutdown, except for the drum next to the failed drum, which is stucked at critical
+    - drum rotation speeds: 5, 10, 15, 20 degrees per second
+    - safety limits for simulations: prompt critical (reactivity > $1.0), max fuel temp (>1600 deg C)
+    - starting power: ~5.5e+06
+    - max power (highest test): ~7.0e+08
+    - FWHM: ~0.5 sec
+    - power increases are: <5x, <5x, 20x, >200x from nominal power
+    - core reaches uniform temperature around 14 seconds (15 deg/sec case)
+    - 
+
+
+
+
+---
+
+---
+**Modeling and Analysis of a Micro-reactor using the DireWolf Code Suite**
+
+*Roskoff et. al.*
+
+- DireWolf uses Griffin (neutronics), Bison (thermal-mechanical), and Sockeye (heat pipe)
+- steady state results presented, along with refined model for use in transient simulations
+- 6 MWth at full power
+- average temp of heat pipes 800C
+- average fuel temp 900C
+- TRISO w/ 19.75 wt% enriched HALEU
+- Graphite monolith
+- control drums (B4C) for primary control, shutdown rods for redundant
+- table of dimensions
+- Griffin solves for flux and power; Bison solves temperature; temp fed back into Griffin for cross sections; iteration continues until temperature and power has converged
+- temperature reactivity coefficient: -4.26 pcm/deg C
+- delayed neutron fraction (beta_eff): 0.00712
+- delayed neutron decay constant (lambda): 0.472 per second
+
+
+---
+
+---
+**The Monolithic Heat Pipe Microreactor Reference Plant Model**
+
+*Ortensi et. al.*
+
+- DireWolf model for generic Heat Pipe Microreactor (gHPMR) design, which is similar to other work for eVinci inspired HPMR
+- table of specifications and measurements for reactor
+- hexagonal core block more similar to my preliminary design than other work I have seen so far
+- graphite monolith, ss316 clad sodium heat pipes
+- thermal model uses effective convective boundary for heat pipes
+- each heat pipe gets its own Sockeye subapplication
+    - initial temperature: 1073.15 K
+    - condenser convection temperature: 523.15 K
+    - condenser convection heat transfer coefficient: 312.4 K
+    - heat pipe heat removal: 20kW
+- steady state results show power peaks toward center due to control drums and reflector
+- transient simulation: loss-of-heat-sink (LHS)
+    - secondary stops working, heat is no longer actively removed from heat pipes
+    - monolith has positive temperature reactivity coefficient
+    - fuel has strong doppler effect for negative temeprature reactivity coefficient
+    - power oscillates as heat is moved through heat pipes and fuel cools down again
+    - total power goes from 100% to 2% in 1000 seconds, stabilizes at ~5% after 10000 seconds
+    - prompt power goes from nearly 100% to 0.4% in 1000 seoncds, stabilizes at ~3% after 10000 seconds
+    - average temperature spikes from ~1155 to ~1220 K in ~300 seconds
+    - max temperature goes from ~1560 to ~1610 in ~200 seconds
+
+
+
+
+
+---
+
+
+
+
+
+
 
 
 
