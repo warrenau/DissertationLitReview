@@ -1,3 +1,25 @@
+# Hybrid Simulation Experiments
+
+---
+**Modeling Smart Grid Applications with Co-Simulation**
+
+*Godfrey et. al.*
+
+- Activating distributed storage units using wireless communication to compensate for a loss of power from a solar panel array during cloud cover
+- Co-simulation between Open Distribution System Simulator (OpenDSS) and ns-2 communication simulator?
+- I am not really sure what this study is doing. It sounded like they are doing experiments or using physical hardware somewhere in the loop, but the writing sounds like it is all computational.
+- What is a Smart Grid?
+- Co-simulation in this case is a coupled model using the results of one model as inputs for another model, not really what I am looking for I don't think.
+
+---
+
+
+
+
+
+
+
+
 # Digital Twins
 
 ## Experimental Validation
@@ -43,6 +65,8 @@
 - 
 ---
 
+
+# Microreactors
 
 ---
 **Thermal Modeling of an eVinci-like heat pipe microreactor using OpenFOAM**
@@ -141,7 +165,7 @@
     - fuel has strong doppler effect for negative temeprature reactivity coefficient
     - power oscillates as heat is moved through heat pipes and fuel cools down again
     - total power goes from 100% to 2% in 1000 seconds, stabilizes at ~5% after 10000 seconds
-    - prompt power goes from nearly 100% to 0.4% in 1000 seoncds, stabilizes at ~3% after 10000 seconds
+    - prompt power goes from nearly 100% to 0.4% in 1000 seconds, stabilizes at ~3% after 10000 seconds
     - average temperature spikes from ~1155 to ~1220 K in ~300 seconds
     - max temperature goes from ~1560 to ~1610 in ~200 seconds
 
